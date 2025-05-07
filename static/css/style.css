@@ -1,0 +1,42 @@
+h1 {
+    border: 2px #eee solid;
+    text-align: center;
+    padding: 10px;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.my-container {
+    background: white;
+    padding: 30px;
+    border-radius: 0px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 800px;
+}
+
+.my-container h2 {
+    margin-bottom: 25px;
+}
+
+input[type="text"] {
+    width: 85%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid rgba(0, 0, 0, 1);
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+button {
+    width: 20%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid rgba(0, 0, 0, 1);
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}

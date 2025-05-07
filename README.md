@@ -1,3 +1,14 @@
 # gloomhaven_chat
 
-In this toy project I'm utilizing things I've recently learned to create an LLM-powered app that is capable to answer questions based on Gloomhaven: Jaws of the Lion Glosary book.
+In this toy project I'm utilizing things I've learned to create an **LLM-powered app** that is capable **to answer questions based on Gloomhaven: Jaws of the Lion Glosary book**.
+
+
+**Technology**
+
+- LangChain
+- Flask
+
+**Steps to reproduce**
+
+- Create a `venv` using the `requirements.txt` file attached.
+- Download the Gloomhaven: Jaws of the Lion Glosary book (e.g., [this](https://www.zatrolene-hry.cz/spolecenska-hra/gloomhaven-lvi-chrtan-10327/k-stazeni/glosar-12276/) Czech one from [Zatrolené hry](https://zatrolene-hry.cz))

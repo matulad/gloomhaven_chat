@@ -1,5 +1,5 @@
 import os
-from dotenv import load_dotenv
+from dotenv import load_dotenv, find_dotenv
 from flask import Flask, render_template, request
 from langchain.chains.retrieval_qa.base import RetrievalQA
 from langchain.text_splitter import RecursiveCharacterTextSplitter
@@ -12,13 +12,13 @@ from langchain_community.vectorstores import FAISS
 
 app = Flask(__name__)
 
+_ = load_dotenv(find_dotenv())
+
 ROOT_DIR = os.environ["ROOT_DIR"]
-_ = load_dotenv(dotenv_path=f"{ROOT_DIR}/.env")
+DOCUMENT_PATH = f"{ROOT_DIR}\\{os.environ['DOCUMENT_PATH']}"
+PERSIST_DIR = f"{ROOT_DIR}\\gloomhaven_files\\faiss\\"
 
-DOCUMENT_PATH = f"{ROOT_DIR}/{os.environ['DOCUMENT_PATH']}"
-PERSIST_DIR = f"{ROOT_DIR}/gloomhaven_files/faiss/"
-
-PARAGRAPH_CHAR = os.environ["PARAGRAPH_CHAR"]
+PARAGRAPH_CHAR = "\uf086"  # os.environ["PARAGRAPH_CHAR"]
 SPLITTER_CHUNK_SIZE = 300
 SPLITTER_CHUNK_OVERLAP = 0  # paragraphs are usually reasonably small
 
